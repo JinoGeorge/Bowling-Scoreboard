@@ -14,9 +14,9 @@ The rules of the scoreboard calculations are as mentioned in the following link:
  $ mvn install
  ~~~~
 3. Run the project using spring-boot maven plugin
-~~~~
+ ~~~~
  $ mvn spring-boot:run
-~~~~
+ ~~~~
 4. From the browser navigate to localhost:8080/
 
 #### Tools used
