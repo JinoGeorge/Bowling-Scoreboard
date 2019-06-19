@@ -39,6 +39,7 @@ public class ScoreboardControllerAdvice {
      */
     @ExceptionHandler(ConstraintViolationException.class)
     public String handleConstraintViolationException(ConstraintViolationException exception, Model model) {
+        log.error("", exception);
         List<String> violations = exception.getConstraintViolations()
                 .stream()
                 .map(violation -> violation.getPropertyPath().toString() + " : " + violation.getMessage())

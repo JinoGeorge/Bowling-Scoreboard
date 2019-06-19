@@ -16,6 +16,9 @@ public class Scoreboard {
     private LinkedList<Frame> frames;
     private Integer totalScore;
 
+    /**
+     * @return true if the total score of the game is 300
+     */
     public boolean isPerfectGame() {
         return GameStatus.GAME_OVER == status && Objects.equals(totalScore, 300);
     }
